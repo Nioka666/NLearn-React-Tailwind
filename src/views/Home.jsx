@@ -1,4 +1,4 @@
-function App() {
+function Home() {
   const cardNumber = [
     {
       number: 1,
@@ -10,12 +10,10 @@ function App() {
 
   return (
     <>
-      <header>
-        <div className="container flex h-36 mx-auto my-10 bg-indigo-950 rounded-xl border-2 border-indigo-300">
-          <h2 className="m-auto font-extrabold text-4xl text-indigo-100">
-            Starting Tailwind CSS
-          </h2>
-        </div>
+      <header className="heads">
+        <h2 className="m-auto font-extrabold text-4xl text-indigo-100">
+          Starting Tailwind CSS
+        </h2>
       </header>
       <main className="container grid mx-auto gap-9">
         <section className="cards-section flex mx-auto gap-7">
@@ -41,23 +39,24 @@ function App() {
 
         <section className="forms-section w-full bg-indigo-950 rounded-xl border-2 border-indigo-300 p-5 flex justify-center">
           <form action="" className="grid mx-auto w-1/2 gap-5 py-9">
-          <h1 className="font-bold text-slate-200 mb-2 text-2xl">
-            Tailwind Forms
-          </h1>
+            <h1 className="font-bold text-slate-200 mb-2 text-2xl">
+              Tailwind Forms
+            </h1>
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Your Email"
-              className="rounded-lg p-4 w-full bg-indigo-950 border-2 border-indigo-300 outline-none focus:ring ring-indigo-900 text-indigo-100"
+              className="input-field"
             />
             <input
               type="text"
               name="username"
               id="username"
               placeholder="Your Username"
-              className="rounded-lg p-4 w-full bg-indigo-950 border-2 border-indigo-300 outline-none focus:ring ring-indigo-900 text-indigo-100"
+              className="input-field"
             />
+            <button className="submit-btn">Submit</button>
           </form>
         </section>
       </main>
@@ -66,4 +65,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
