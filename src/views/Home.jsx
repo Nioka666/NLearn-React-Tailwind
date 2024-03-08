@@ -15,8 +15,8 @@ function Home() {
           Starting Tailwind CSS
         </h2>
       </header>
-      <main className="container grid mx-auto gap-9">
-        <section className="cards-section flex mx-auto gap-7">
+      <main className="mains">
+        <section className="cards-section">
           {cardNumber.map((card) => (
             <>
               <div className="card w-1/2 bg-indigo-950 rounded-xl p-8 border-2 border-indigo-300 grid">
@@ -37,8 +37,8 @@ function Home() {
           ))}
         </section>
 
-        <section className="forms-section w-full bg-indigo-950 rounded-xl border-2 border-indigo-300 p-5 flex justify-center">
-          <form action="" className="grid mx-auto w-1/2 gap-5 py-9">
+        <section className="forms-section">
+          <form action="" className="forms">
             <h1 className="font-bold text-slate-200 mb-2 text-2xl">
               Tailwind Forms
             </h1>
