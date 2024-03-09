@@ -1,3 +1,6 @@
+import Footer from "./layouts/Footer";
+import Header from "./layouts/Header";
+
 function Home() {
   const cardNumber = [
     {
@@ -10,11 +13,7 @@ function Home() {
 
   return (
     <>
-      <header className="heads">
-        <h2 className="m-auto font-extrabold text-4xl text-indigo-100">
-          Starting Tailwind CSS
-        </h2>
-      </header>
+      <Header />
       <main className="mains">
         <section className="cards-section">
           {cardNumber.map((card) => (
@@ -39,9 +38,10 @@ function Home() {
 
         <section className="forms-section">
           <form action="" className="forms">
-            <h1 className="font-bold text-slate-200 mb-2 text-2xl">
-              Tailwind Forms
-            </h1>
+            <h3 className="font-bold text-slate-200 mb-2">Tailwind Forms</h3>
+            <label htmlFor="email" className="labels-in-form">
+              Email
+            </label>
             <input
               type="email"
               name="email"
@@ -49,6 +49,9 @@ function Home() {
               placeholder="Your Email"
               className="input-field"
             />
+            <label htmlFor="username" className="labels-in-form">
+              Username
+            </label>
             <input
               type="text"
               name="username"
@@ -56,11 +59,21 @@ function Home() {
               placeholder="Your Username"
               className="input-field"
             />
+            <label htmlFor="password" className="labels-in-form">
+              Password
+            </label>
+            <input
+              type="text"
+              name="password"
+              id="password"
+              placeholder="Your Password"
+              className="input-field"
+            />
             <button className="submit-btn">Submit</button>
           </form>
         </section>
       </main>
-      <footer className="h-44"></footer>
+      <Footer />
     </>
   );
 }

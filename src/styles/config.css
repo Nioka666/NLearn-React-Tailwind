@@ -3,20 +3,35 @@
 @tailwind utilities;
 
 @layer base {
+  /* text headers */
   h1 {
-    @apply text-4xl;
+    @apply text-5xl;
   }
   h2 {
-    @apply text-3xl;
+    @apply text-4xl;
   }
   h3 {
+    @apply text-3xl;
+  }
+  h4 {
     @apply text-2xl;
+  }
+  h5 {
+    @apply text-xl;
+  }
+
+  a {
+    @apply no-underline;
   }
 }
 
 @layer components {
   .heads {
-    @apply container flex h-36 mx-auto my-10 bg-indigo-950 rounded-xl border-2 border-indigo-300;
+    @apply container relative flex h-36 mx-auto my-10 bg-indigo-950 rounded-xl border-2 border-indigo-300;
+  }
+
+  .heads img {
+    @apply w-20 h-11 block mx-auto absolute left-56 top-11;
   }
 
   .mains {
@@ -28,18 +43,26 @@
   }
 
   .forms-section {
-    @apply w-full bg-indigo-950 rounded-xl border-2 border-indigo-300 p-5 flex justify-center;
+    @apply w-10/12 bg-indigo-950 rounded-xl border-2 border-indigo-300 px-5 py-9 mx-auto flex justify-center;
   }
 
   .forms {
-    @apply grid mx-auto w-1/2 gap-5 py-9;
+    @apply grid mx-auto w-full gap-5 py-9 px-24;
   }
 
   .input-field {
     @apply rounded-lg p-4 w-full bg-indigo-950 border-2 border-indigo-300 outline-none focus:ring ring-indigo-900 text-indigo-100;
   }
 
+  .labels-in-form {
+    @apply text-slate-300 -mb-2;
+  }
+
   .submit-btn {
-    @apply mt-2 p-3 px-7 font-semibold w-fit rounded-xl bg-sky-300 hover:bg-sky-500 transition-all ease-in-out;
+    @apply mt-2 p-3 px-7 font-semibold text-lg w-fit rounded-xl bg-sky-300 hover:bg-sky-500 transition-all ease-in;
+  }
+
+  footer {
+    @apply h-44;
   }
 }
