@@ -18,7 +18,7 @@ function Home() {
         <section className="cards-section">
           {cardNumber.map((card) => (
             <>
-              <div className="card w-1/2 bg-indigo-950 rounded-xl p-8 border-2 border-indigo-300 grid">
+              <div className="cards-group">
                 <h1 className="font-semibold text-indigo-100 text-xl">
                   Card {card.number}
                 </h1>

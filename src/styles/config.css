@@ -42,6 +42,10 @@
     @apply flex mx-auto gap-7;
   }
 
+  .cards-section .cards-group {
+    @apply w-1/2 bg-indigo-950 rounded-xl p-8 border-2 border-indigo-300 grid;
+  }
+
   .forms-section {
     @apply w-10/12 bg-indigo-950 rounded-xl border-2 border-indigo-300 px-5 py-9 mx-auto flex justify-center;
   }
